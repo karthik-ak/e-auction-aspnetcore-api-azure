@@ -25,7 +25,7 @@ namespace EAuction.APIGateway
             Configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; } 
+        public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -52,7 +52,7 @@ namespace EAuction.APIGateway
                     ClockSkew = TimeSpan.Zero
                 };
 
-            });         
+            });
 
 
             services.AddControllers();
@@ -68,7 +68,8 @@ namespace EAuction.APIGateway
 
             services.AddCors(o => o.AddPolicy("CorsPolicy", builder =>
             {
-                builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader().AllowCredentials().WithOrigins("http://localhost:4200");
+                string[] origins = { "http://localhost:4200", "https://e-auction-web-app.azurewebsites.net" };
+                builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader().AllowCredentials().WithOrigins(origins);
             }));
         }
 
@@ -80,8 +81,8 @@ namespace EAuction.APIGateway
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "EAuction.APIGateway v1"));
-            } 
-            
+            }
+
             app.UseRouting();
 
             app.UseAuthorization();
