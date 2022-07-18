@@ -17,7 +17,7 @@ namespace EventBusAzureServiceBus
 
         public TopicSender(IConfiguration configuration)
         {
-            var connectionString = "Endpoint=sb://sb-hackfse-eauction.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=p82vrUwqVqbFi5fk+XdGpxMUpVTN/5n3EQsV+jAAvRM=";
+            var connectionString = "Endpoint=sb://sb-hackfse-eauction.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=xbYHdXshbQeYuB3nXm5yYI0xTWBDFbj6PS35qtABkwI=";
             _client = new ServiceBusClient(connectionString);
             _clientSender = _client.CreateSender(TOPIC_PATH);
         }
