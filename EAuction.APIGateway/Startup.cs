@@ -11,8 +11,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using Ocelot.DependencyInjection;
-using Ocelot.Middleware;
+//using Ocelot.DependencyInjection;
+//using Ocelot.Middleware;
 using System;
 using System.Text;
 
@@ -54,10 +54,9 @@ namespace EAuction.APIGateway
 
             });
 
-
             services.AddControllers();
 
-            services.AddOcelot();
+            //services.AddOcelot();
 
             #region Swagger Dependencies
             services.AddSwaggerGen(c =>
@@ -94,7 +93,7 @@ namespace EAuction.APIGateway
                 endpoints.MapControllers();
             });
 
-            app.UseOcelot();
+            //app.UseOcelot();
         }
     }
 }
