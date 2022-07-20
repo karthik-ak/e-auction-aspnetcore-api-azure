@@ -183,7 +183,7 @@
         "AuthenticationProviderKey": "eauction_auth_scheme",
         "AllowedScopes": []
       },
-      "UpstreamPathTemplate": "/e-auction/api/v1/seller/show-bids/{productId}",
+      "UpstreamPathTemplate": "/e-auction/api/v1/buyer/show-bids/{productId}",
       "UpstreamHttpMethod": [ "GET" ]
     },
     {
@@ -206,7 +206,7 @@
         "AuthenticationProviderKey": "eauction_auth_scheme",
         "AllowedScopes": []
       },
-      "UpstreamPathTemplate": "/e-auction/api/v1/seller/show-bid/{productId}/{buyerEmailId}",
+      "UpstreamPathTemplate": "/e-auction/api/v1/buyer/show-bid/{productId}/{buyerEmailId}",
       "UpstreamHttpMethod": [ "GET" ]
     },
     {
