@@ -1,25 +1,22 @@
 ﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Threading.Tasks;
 using AutoMapper;
 using EAuction.Bid.WebApi.Exceptions;
 using EAuction.Order.Application.Commands;
 using EAuction.Order.Application.Commands.OrderCreate;
 using EAuction.Order.Application.Queries;
 using EAuction.Order.Application.Responses;
-using EAuction.Order.Domain.Entities;
 using EAuction.Order.Domain.Repositories;
 using EAuction.Products.Api.Repositories.Abstractions;
 using EventBusAzureServiceBus.Abstractions;
-using EventBusRabbitMQ.Core;
 using EventBusRabbitMQ.Events;
-using EventBusRabbitMQ.Producer;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Threading.Tasks;
 
 namespace EAuction.Order.WebApi.Controllers
 {
