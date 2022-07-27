@@ -3,18 +3,11 @@
     {
       //Producst API
       "DownstreamPathTemplate": "/api/v1/Products/CreateProduct",
-      //"DownstreamScheme": "http",
-      //"DownstreamHostAndPorts": [
-      //  {
-      //    "Host": "localhost",
-      //    "Port": 36886
-      //  }
-      //],
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "e-auction-product-api.azurewebsites.net",
-          "Port": 443
+          "Host": "localhost",
+          "Port": 36886
         }
       ],
       "AuthenticationOptions": {
@@ -26,18 +19,11 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1/Products/GetProductsUploadedBy/{emailId}",
-      //"DownstreamScheme": "http",
-      //"DownstreamHostAndPorts": [
-      //  {
-      //    "Host": "localhost",
-      //    "Port": 36886
-      //  }
-      //],
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "e-auction-product-api.azurewebsites.net",
-          "Port": 443
+          "Host": "localhost",
+          "Port": 36886
         }
       ],
       "AuthenticationOptions": {
@@ -49,41 +35,27 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1/Products/GetAllProducts",
-      //"DownstreamScheme": "http",
-      //"DownstreamHostAndPorts": [
-      //  {
-      //    "Host": "localhost",
-      //    "Port": 36886
-      //  }
-      //],
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "e-auction-product-api.azurewebsites.net",
-          "Port": 443
+          "Host": "localhost",
+          "Port": 36886
         }
       ],
-      //"AuthenticationOptions": {
-      //  "AuthenticationProviderKey": "eauction_auth_scheme",
-      //  "AllowedScopes": []
-      //},
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "eauction_auth_scheme",
+        "AllowedScopes": []
+      },
       "UpstreamPathTemplate": "/e-auction/api/v1/seller/get-all-products",
       "UpstreamHttpMethod": [ "GET" ]
     },
     {
       "DownstreamPathTemplate": "/api/v1/Products/GetProduct/{id}",
-      //"DownstreamScheme": "http",
-      //"DownstreamHostAndPorts": [
-      //  {
-      //    "Host": "localhost",
-      //    "Port": 36886
-      //  }
-      //],
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "e-auction-product-api.azurewebsites.net",
-          "Port": 443
+          "Host": "localhost",
+          "Port": 36886
         }
       ],
       "AuthenticationOptions": {
@@ -95,18 +67,11 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1/Products/UpdateProduct",
-      //"DownstreamScheme": "http",
-      //"DownstreamHostAndPorts": [
-      //  {
-      //    "Host": "localhost",
-      //    "Port": 36886
-      //  }
-      //],
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "e-auction-product-api.azurewebsites.net",
-          "Port": 443
+          "Host": "localhost",
+          "Port": 36886
         }
       ],
       "AuthenticationOptions": {
@@ -118,18 +83,11 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1/Products/DeleteProduct/{productId}",
-      //"DownstreamScheme": "http",
-      //"DownstreamHostAndPorts": [
-      //  {
-      //    "Host": "localhost",
-      //    "Port": 36886
-      //  }
-      //],
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "e-auction-product-api.azurewebsites.net",
-          "Port": 443
+          "Host": "localhost",
+          "Port": 36886
         }
       ],
       "AuthenticationOptions": {
@@ -142,18 +100,11 @@
     //-Bid API
     {
       "DownstreamPathTemplate": "/api/v1/Bid/PlaceBid",
-      //"DownstreamScheme": "http",
-      //"DownstreamHostAndPorts": [
-      //  {
-      //    "Host": "localhost",
-      //    "Port": 59655
-      //  }
-      //],
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "e-auction-bid-api.azurewebsites.net",
-          "Port": 443
+          "Host": "localhost",
+          "Port": 59655
         }
       ],
       "AuthenticationOptions": {
@@ -165,18 +116,11 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1/Bid/GetBids/{productId}",
-      //"DownstreamScheme": "http",
-      //"DownstreamHostAndPorts": [
-      //  {
-      //    "Host": "localhost",
-      //    "Port": 59655
-      //  }
-      //],
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "e-auction-bid-api.azurewebsites.net",
-          "Port": 443
+          "Host": "localhost",
+          "Port": 59655
         }
       ],
       "AuthenticationOptions": {
@@ -188,18 +132,11 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1/Bid/GetBid/{productId}/{buyerEmailId}",
-      //"DownstreamScheme": "http",
-      //"DownstreamHostAndPorts": [
-      //  {
-      //    "Host": "localhost",
-      //    "Port": 59655
-      //  }
-      //],
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "e-auction-bid-api.azurewebsites.net",
-          "Port": 443
+          "Host": "localhost",
+          "Port": 59655
         }
       ],
       "AuthenticationOptions": {
@@ -211,18 +148,11 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1/Bid/UpdateBid/{productId}/{buyerEmailId}/{newBidAmount}",
-      //"DownstreamScheme": "http",
-      //"DownstreamHostAndPorts": [
-      //  {
-      //    "Host": "localhost",
-      //    "Port": 59655
-      //  }
-      //],
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "e-auction-bid-api.azurewebsites.net",
-          "Port": 443
+          "Host": "localhost",
+          "Port": 59655
         }
       ],
       "AuthenticationOptions": {
@@ -234,18 +164,11 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1/Bid/AcceptBid",
-      //"DownstreamScheme": "http",
-      //"DownstreamHostAndPorts": [
-      //  {
-      //    "Host": "localhost",
-      //    "Port": 59655
-      //  }
-      //],
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "e-auction-bid-api.azurewebsites.net",
-          "Port": 443
+          "Host": "localhost",
+          "Port": 59655
         }
       ],
       "AuthenticationOptions": {
@@ -257,18 +180,11 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1/Bid/RejectBid",
-      //"DownstreamScheme": "http",
-      //"DownstreamHostAndPorts": [
-      //  {
-      //    "Host": "localhost",
-      //    "Port": 59655
-      //  }
-      //],
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "e-auction-bid-api.azurewebsites.net",
-          "Port": 443
+          "Host": "localhost",
+          "Port": 59655
         }
       ],
       "AuthenticationOptions": {
